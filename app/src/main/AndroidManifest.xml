@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="dev.dworks.apps.anexplorer"
+    package="dev.dworks.apps.moexplorer"
     android:installLocation="auto">
 
     <permission
@@ -31,7 +31,7 @@
         android:required="false" />
 
     <application
-        android:name=".DocumentsApplication"
+        android:name="dev.dworks.apps.moexplorer.DocumentsApplication"
         android:allowBackup="true"
         android:banner="@drawable/banner"
         android:icon="@drawable/ic_launcher"
@@ -41,7 +41,7 @@
 
         <!-- TODO: allow rotation when state saving is in better shape -->
         <activity
-            android:name=".DocumentsActivity"
+            android:name="dev.dworks.apps.moexplorer.DocumentsActivity"
             android:theme="@style/Theme.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.OPEN_DOCUMENT" />
@@ -103,19 +103,19 @@
                 android:resource="@xml/device_filter" />
         </activity>
         <activity
-            android:name=".StandaloneActivity"
+            android:name="dev.dworks.apps.moexplorer.StandaloneActivity"
             android:theme="@style/Theme.Document" />
         <activity
-            android:name=".setting.SettingsActivity"
+            android:name="dev.dworks.apps.moexplorer.setting.SettingsActivity"
             android:exported="false"
             android:label="@string/menu_settings"
             android:theme="@style/Theme.Setting" />
         <activity
-            android:name=".AboutActivity"
+            android:name="dev.dworks.apps.moexplorer.AboutActivity"
             android:label="About"
             android:theme="@style/Theme.Document" />
 
-        <receiver android:name=".receiver.PackageReceiver">
+        <receiver android:name="dev.dworks.apps.moexplorer.receiver.PackageReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.PACKAGE_FULLY_REMOVED" />
                 <action android:name="android.intent.action.PACKAGE_DATA_CLEARED" />
@@ -123,7 +123,7 @@
                 <data android:scheme="package" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".receiver.MountReceiver">
+        <receiver android:name="dev.dworks.apps.moexplorer.receiver.MountReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.MEDIA_MOUNTED" />
                 <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
@@ -136,7 +136,7 @@
         </receiver>
 
         <activity
-            android:name=".NoteActivity"
+            android:name="dev.dworks.apps.moexplorer.NoteActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="sensor"
             android:theme="@style/Theme.Note">
@@ -150,7 +150,7 @@
         </activity>
 
         <receiver
-            android:name=".receiver.ConnectionsReceiver"
+            android:name="dev.dworks.apps.moexplorer.receiver.ConnectionsReceiver"
             android:enabled="true"
             android:exported="false">
             <intent-filter>
@@ -162,11 +162,11 @@
         </receiver>
 
         <service
-            android:name=".service.ConnectionsService"
+            android:name="dev.dworks.apps.moexplorer.service.ConnectionsService"
             android:enabled="true"
             android:exported="false" />
         <service
-            android:name=".service.ServerService"
+            android:name="dev.dworks.apps.moexplorer.service.ServerService"
             android:icon="@drawable/ic_root_server"
             android:label="@string/toggle_messages"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
@@ -176,7 +176,7 @@
         </service>
 
         <provider
-            android:name="dev.dworks.apps.anexplorer.provider.RecentsProvider"
+            android:name="dev.dworks.apps.moexplorer.provider.RecentsProvider"
             android:authorities="${applicationId}.recents"
             android:exported="true"
             android:grantUriPermissions="true"
@@ -186,7 +186,7 @@
             </intent-filter>
         </provider>
         <provider
-            android:name="dev.dworks.apps.anexplorer.provider.ExternalStorageProvider"
+            android:name="dev.dworks.apps.moexplorer.provider.ExternalStorageProvider"
             android:authorities="${applicationId}.externalstorage.documents"
             android:exported="true"
             android:grantUriPermissions="true"
@@ -196,7 +196,7 @@
             </intent-filter>
         </provider>
         <provider
-            android:name="dev.dworks.apps.anexplorer.provider.MediaDocumentsProvider"
+            android:name="dev.dworks.apps.moexplorer.provider.MediaDocumentsProvider"
             android:authorities="${applicationId}.media.documents"
             android:exported="true"
             android:grantUriPermissions="true"
@@ -206,7 +206,7 @@
             </intent-filter>
         </provider>
         <provider
-            android:name="dev.dworks.apps.anexplorer.provider.NonMediaDocumentsProvider"
+            android:name="dev.dworks.apps.moexplorer.provider.NonMediaDocumentsProvider"
             android:authorities="${applicationId}.nonmedia.documents"
             android:exported="true"
             android:grantUriPermissions="true"
@@ -216,7 +216,7 @@
             </intent-filter>
         </provider>
         <provider
-            android:name="dev.dworks.apps.anexplorer.provider.AppsProvider"
+            android:name="dev.dworks.apps.moexplorer.provider.AppsProvider"
             android:authorities="${applicationId}.apps.documents"
             android:exported="true"
             android:grantUriPermissions="true"
@@ -226,7 +226,7 @@
             </intent-filter>
         </provider>
         <provider
-            android:name="dev.dworks.apps.anexplorer.provider.RootedStorageProvider"
+            android:name="dev.dworks.apps.moexplorer.provider.RootedStorageProvider"
             android:authorities="${applicationId}.rootedstorage.documents"
             android:exported="true"
             android:grantUriPermissions="true"
@@ -237,7 +237,7 @@
         </provider>
 
         <provider
-            android:name="dev.dworks.apps.anexplorer.provider.HeatMapProvider"
+            android:name="dev.dworks.apps.moexplorer.provider.HeatMapProvider"
             android:authorities="${applicationId}.heatmap.documents"
             android:exported="false"
             android:enabled="false"
@@ -248,7 +248,7 @@
             </intent-filter>
         </provider>
         <provider
-            android:name="dev.dworks.apps.anexplorer.provider.DownloadStorageProvider"
+            android:name="dev.dworks.apps.moexplorer.provider.DownloadStorageProvider"
             android:authorities="${applicationId}.downloads.documents"
             android:exported="false"
             android:enabled="false"
@@ -260,13 +260,13 @@
         </provider>
 
         <provider
-            android:name="dev.dworks.apps.anexplorer.provider.ExplorerProvider"
+            android:name="dev.dworks.apps.moexplorer.provider.ExplorerProvider"
             android:authorities="${applicationId}.explorer"
             android:enabled="true"
             android:exported="false" />
 
         <provider
-            android:name="dev.dworks.apps.anexplorer.provider.UsbStorageProvider"
+            android:name="dev.dworks.apps.moexplorer.provider.UsbStorageProvider"
             android:authorities="${applicationId}.usbstorage.documents"
             android:exported="true"
             android:grantUriPermissions="true"
@@ -277,7 +277,7 @@
         </provider>
 
         <provider
-            android:name="dev.dworks.apps.anexplorer.provider.NetworkStorageProvider"
+            android:name="dev.dworks.apps.moexplorer.provider.NetworkStorageProvider"
             android:authorities="${applicationId}.networkstorage.documents"
             android:exported="true"
             android:grantUriPermissions="true"

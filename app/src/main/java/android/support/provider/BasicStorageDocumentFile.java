@@ -3,7 +3,7 @@ package android.support.provider;
 import android.content.Context;
 import android.net.Uri;
 
-import dev.dworks.apps.anexplorer.misc.Utils;
+import dev.dworks.apps.moexplorer.misc.Utils;
 
 /**
  * Created by HaKr on 25/01/17.

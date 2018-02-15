@@ -60,7 +60,7 @@
                 app:divider="@drawable/line_divider"
                 app:showDividers="middle|end">
 
-                <dev.dworks.apps.anexplorer.ui.CompatTextView
+                <dev.dworks.apps.moexplorer.ui.CompatTextView
                     android:id="@+id/action_rate"
                     style="@style/ButtonAppTheme"
                     android:layout_width="match_parent"
@@ -78,7 +78,7 @@
                     android:visibility="visible"
                     app:drawableStart="@drawable/ic_star" />
 
-                <dev.dworks.apps.anexplorer.ui.CompatTextView
+                <dev.dworks.apps.moexplorer.ui.CompatTextView
                     android:id="@+id/action_support"
                     style="@style/ButtonAppTheme"
                     android:layout_width="match_parent"
@@ -96,7 +96,7 @@
                     android:visibility="visible"
                     app:drawableStart="@drawable/ic_support" />
 
-                <dev.dworks.apps.anexplorer.ui.CompatTextView
+                <dev.dworks.apps.moexplorer.ui.CompatTextView
                     android:id="@+id/action_share"
                     style="@style/ButtonAppTheme"
                     android:layout_width="match_parent"
@@ -114,7 +114,7 @@
                     android:visibility="visible"
                     app:drawableStart="@drawable/ic_share" />
 
-                <dev.dworks.apps.anexplorer.ui.CompatTextView
+                <dev.dworks.apps.moexplorer.ui.CompatTextView
                     android:id="@+id/action_feedback"
                     style="@style/ButtonAppTheme"
                     android:layout_width="match_parent"

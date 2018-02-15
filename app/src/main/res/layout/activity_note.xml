@@ -47,7 +47,7 @@
 
             </ScrollView>
 
-            <dev.dworks.apps.anexplorer.ui.MaterialProgressBar
+            <dev.dworks.apps.moexplorer.ui.MaterialProgressBar
                 android:id="@+id/progress"
                 style="@style/ListProgress"
                 android:layout_width="@dimen/progress_bar_size"

@@ -39,7 +39,7 @@
             android:layout_marginRight="16dp"
             android:layout_marginEnd="16dp">
 
-            <dev.dworks.apps.anexplorer.ui.CircleImage
+            <dev.dworks.apps.moexplorer.ui.CircleImage
                 android:id="@+id/icon_mime_background"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

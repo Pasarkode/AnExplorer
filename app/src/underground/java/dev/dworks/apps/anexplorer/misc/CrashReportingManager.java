@@ -1,6 +1,6 @@
-package dev.dworks.apps.anexplorer.misc;
+package dev.dworks.apps.moexplorer.misc;
 
-import dev.dworks.apps.anexplorer.BuildConfig;
+import dev.dworks.apps.moexplorer.BuildConfig;
 
 /**
  * Created by HaKr on 23/05/16.

@@ -36,7 +36,7 @@
             android:layout_weight="1"
             android:background="@color/item_doc_grid_protect_background_light">
 
-            <dev.dworks.apps.anexplorer.ui.CircleImage
+            <dev.dworks.apps.moexplorer.ui.CircleImage
                 android:id="@+id/icon_mime_background"
                 android:layout_width="@dimen/grid_icon_size"
                 android:layout_height="@dimen/grid_icon_size"

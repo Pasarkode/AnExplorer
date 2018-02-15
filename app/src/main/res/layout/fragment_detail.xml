@@ -23,7 +23,7 @@
             android:foregroundGravity="fill"
             android:minHeight="200dp">
 
-            <dev.dworks.apps.anexplorer.ui.CircleImage
+            <dev.dworks.apps.moexplorer.ui.CircleImage
                 android:id="@+id/icon_mime_background"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
