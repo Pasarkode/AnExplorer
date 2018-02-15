@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 27
     buildToolsVersion '27.0.0'
-    
+
     applicationVariants.all { variant ->
         variant.outputs.all {
             outputFileName = "${parent.name}-${variant.name}-${variant.versionName}.apk"
@@ -103,12 +103,12 @@ dependencies {
     debugCompile 'com.squareup.leakcanary:leakcanary-android:+'
 }
 
-def props = new Properties()
-props.load(new FileInputStream(rootProject.file("keystore.properties")))
-android.signingConfigs.release.storeFile rootProject.file(props.keyStore)
-android.signingConfigs.release.storePassword props.keyStorePassword
-android.signingConfigs.release.keyAlias props.keyAlias
-android.signingConfigs.release.keyPassword props.keyAliasPassword
+//def props = new Properties()
+//props.load(new FileInputStream(rootProject.file("keystore.properties")))
+//android.signingConfigs.release.storeFile rootProject.file(props.keyStore)
+//android.signingConfigs.release.storePassword props.keyStorePassword
+//android.signingConfigs.release.keyAlias props.keyAlias
+//android.signingConfigs.release.keyPassword props.keyAliasPassword
 
 if (getGradle().getStartParameter().getTaskRequests().toString().contains("Free")) {
     apply plugin: 'com.google.gms.google-services'
