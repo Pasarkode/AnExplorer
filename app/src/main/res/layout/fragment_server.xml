@@ -26,7 +26,7 @@
                 android:layout_marginBottom="30dp"
                 android:layout_marginTop="30dp">
 
-                <dev.dworks.apps.moexplorer.ui.CircleImage
+                <dev.amoeba.moexplorer.ui.CircleImage
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"

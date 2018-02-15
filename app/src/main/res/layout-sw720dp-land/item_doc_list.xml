@@ -40,7 +40,7 @@
             android:layout_marginStart="0dp"
             android:layout_marginEnd="26dp">
 
-            <dev.dworks.apps.moexplorer.ui.CircleImage
+            <dev.amoeba.moexplorer.ui.CircleImage
                 android:id="@+id/icon_mime_background"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

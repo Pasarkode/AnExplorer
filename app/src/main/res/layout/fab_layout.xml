@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<dev.dworks.apps.moexplorer.ui.FloatingActionsMenu xmlns:android="http://schemas.android.com/apk/res/android"
+<dev.amoeba.moexplorer.ui.FloatingActionsMenu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/fabs"
@@ -12,4 +12,4 @@
     app:fabMenu="@menu/menu_fab"
     app:touchGuardDrawable="@drawable/fab_background"
     android:contentDescription="@string/add">
-</dev.dworks.apps.moexplorer.ui.FloatingActionsMenu>
+</dev.amoeba.moexplorer.ui.FloatingActionsMenu>

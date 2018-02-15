@@ -15,29 +15,29 @@
         android:orientation="vertical"
         android:paddingTop="5dp">
 
-        <dev.dworks.apps.moexplorer.ui.HomeItem
+        <dev.amoeba.moexplorer.ui.HomeItem
             android:id="@+id/storage_stats"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <dev.dworks.apps.moexplorer.ui.HomeItem
+        <dev.amoeba.moexplorer.ui.HomeItem
             android:id="@+id/seconday_storage_stats"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:visibility="gone"/>
 
-        <dev.dworks.apps.moexplorer.ui.HomeItem
+        <dev.amoeba.moexplorer.ui.HomeItem
             android:id="@+id/usb_storage_stats"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:visibility="gone"/>
 
-        <dev.dworks.apps.moexplorer.ui.HomeItem
+        <dev.amoeba.moexplorer.ui.HomeItem
             android:id="@+id/memory_stats"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <dev.dworks.apps.moexplorer.ui.RecyclerViewPlus
+        <dev.amoeba.moexplorer.ui.RecyclerViewPlus
             android:id="@+id/shortcuts_recycler"
             android:layout_width="match_parent"
             android:layout_height="100dp"
@@ -84,7 +84,7 @@
 
             </FrameLayout>
 
-            <dev.dworks.apps.moexplorer.ui.RecyclerViewPlus
+            <dev.amoeba.moexplorer.ui.RecyclerViewPlus
                 android:id="@+id/recents_recycler"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

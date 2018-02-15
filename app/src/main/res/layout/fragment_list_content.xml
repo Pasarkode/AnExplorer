@@ -11,7 +11,7 @@
         android:orientation="vertical"
         android:visibility="gone" >
 
-        <dev.dworks.apps.moexplorer.ui.MaterialProgressBar
+        <dev.amoeba.moexplorer.ui.MaterialProgressBar
             android:id="@+id/progressBar"
             style="@style/ListProgress"
             android:layout_width="@dimen/progress_bar_size"

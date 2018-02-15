@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 
-<dev.dworks.apps.moexplorer.ui.DirectoryView xmlns:android="http://schemas.android.com/apk/res/android"
+<dev.amoeba.moexplorer.ui.DirectoryView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -28,7 +28,7 @@
         android:orientation="vertical"
         android:visibility="gone">
 
-        <dev.dworks.apps.moexplorer.ui.MaterialProgressBar
+        <dev.amoeba.moexplorer.ui.MaterialProgressBar
             android:id="@+id/progressBar"
             style="@style/ListProgress"
             android:layout_width="@dimen/progress_bar_size"
@@ -83,7 +83,7 @@
 
         </FrameLayout>
 
-        <dev.dworks.apps.moexplorer.ui.CompatTextView
+        <dev.amoeba.moexplorer.ui.CompatTextView
             android:id="@android:id/empty"
             style="@style/TextAppearance.AppCompat.Subhead"
             android:layout_width="wrap_content"
@@ -95,4 +95,4 @@
             app:drawableTop="@drawable/ic_empty_file" />
     </FrameLayout>
 
-</dev.dworks.apps.moexplorer.ui.DirectoryView>
+</dev.amoeba.moexplorer.ui.DirectoryView>

@@ -18,6 +18,7 @@
     <!-- Title of the documents application [CHAR LIMIT=32] -->
     <string name="app_label">Documents</string>
     <string name="banner_ads">ca-app-pub-6793022751700770/2057902882</string>
+    <string name="banner_besar">ca-app-pub-6793022751700770/7837801033</string>
     <!-- Action bar title prompting user to choose a location to open a document from [CHAR LIMIT=32] -->
     <string name="title_open">Open from</string>
     <!-- Action bar title prompting user to choose a location to save a document to [CHAR LIMIT=32] -->

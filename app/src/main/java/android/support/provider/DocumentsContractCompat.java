@@ -27,7 +27,7 @@ import android.util.Log;
 
 import java.util.ArrayList;
 
-import dev.dworks.apps.moexplorer.model.DocumentsContract;
+import dev.amoeba.moexplorer.model.DocumentsContract;
 
 class DocumentsContractCompat {
     private static final String TAG = "DocumentsContractCompat";

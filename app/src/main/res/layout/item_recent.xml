@@ -24,7 +24,7 @@
             android:contentDescription="@null"
             android:scaleType="centerCrop" />
 
-        <dev.dworks.apps.moexplorer.ui.CircleImage
+        <dev.amoeba.moexplorer.ui.CircleImage
             android:id="@+id/icon_mime_background"
             android:layout_width="@dimen/grid_icon_size"
             android:layout_height="@dimen/grid_icon_size"

@@ -38,7 +38,7 @@
             android:layout_marginRight="@dimen/list_item_padding"
             android:layout_marginEnd="@dimen/list_item_padding">
 
-            <dev.dworks.apps.moexplorer.ui.CircleImage
+            <dev.amoeba.moexplorer.ui.CircleImage
                 android:id="@+id/icon_mime_background"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

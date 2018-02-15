@@ -1,6 +1,6 @@
-package dev.dworks.apps.moexplorer.misc;
+package dev.amoeba.moexplorer.misc;
 
-import dev.dworks.apps.moexplorer.BuildConfig;
+import dev.amoeba.moexplorer.BuildConfig;
 
 /**
  * Created by HaKr on 23/05/16.

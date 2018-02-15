@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="dev.dworks.apps.moexplorer"
+    package="dev.amoeba.moexplorer"
     android:installLocation="auto">
 
     <permission
@@ -31,7 +31,7 @@
         android:required="false" />
 
     <application
-        android:name="dev.dworks.apps.moexplorer.DocumentsApplication"
+        android:name="dev.amoeba.moexplorer.DocumentsApplication"
         android:allowBackup="true"
         android:banner="@drawable/banner"
         android:icon="@drawable/ic_launcher"
@@ -41,7 +41,7 @@
 
         <!-- TODO: allow rotation when state saving is in better shape -->
         <activity
-            android:name="dev.dworks.apps.moexplorer.DocumentsActivity"
+            android:name="dev.amoeba.moexplorer.DocumentsActivity"
             android:theme="@style/Theme.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.OPEN_DOCUMENT" />
@@ -103,19 +103,19 @@
                 android:resource="@xml/device_filter" />
         </activity>
         <activity
-            android:name="dev.dworks.apps.moexplorer.StandaloneActivity"
+            android:name="dev.amoeba.moexplorer.StandaloneActivity"
             android:theme="@style/Theme.Document" />
         <activity
-            android:name="dev.dworks.apps.moexplorer.setting.SettingsActivity"
+            android:name="dev.amoeba.moexplorer.setting.SettingsActivity"
             android:exported="false"
             android:label="@string/menu_settings"
             android:theme="@style/Theme.Setting" />
         <activity
-            android:name="dev.dworks.apps.moexplorer.AboutActivity"
+            android:name="dev.amoeba.moexplorer.AboutActivity"
             android:label="About"
             android:theme="@style/Theme.Document" />
 
-        <receiver android:name="dev.dworks.apps.moexplorer.receiver.PackageReceiver">
+        <receiver android:name="dev.amoeba.moexplorer.receiver.PackageReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.PACKAGE_FULLY_REMOVED" />
                 <action android:name="android.intent.action.PACKAGE_DATA_CLEARED" />
@@ -123,7 +123,7 @@
                 <data android:scheme="package" />
             </intent-filter>
         </receiver>
-        <receiver android:name="dev.dworks.apps.moexplorer.receiver.MountReceiver">
+        <receiver android:name="dev.amoeba.moexplorer.receiver.MountReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.MEDIA_MOUNTED" />
                 <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
@@ -136,7 +136,7 @@
         </receiver>
 
         <activity
-            android:name="dev.dworks.apps.moexplorer.NoteActivity"
+            android:name="dev.amoeba.moexplorer.NoteActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="sensor"
             android:theme="@style/Theme.Note">
@@ -150,7 +150,7 @@
         </activity>
 
         <receiver
-            android:name="dev.dworks.apps.moexplorer.receiver.ConnectionsReceiver"
+            android:name="dev.amoeba.moexplorer.receiver.ConnectionsReceiver"
             android:enabled="true"
             android:exported="false">
             <intent-filter>
@@ -162,11 +162,11 @@
         </receiver>
 
         <service
-            android:name="dev.dworks.apps.moexplorer.service.ConnectionsService"
+            android:name="dev.amoeba.moexplorer.service.ConnectionsService"
             android:enabled="true"
             android:exported="false" />
         <service
-            android:name="dev.dworks.apps.moexplorer.service.ServerService"
+            android:name="dev.amoeba.moexplorer.service.ServerService"
             android:icon="@drawable/ic_root_server"
             android:label="@string/toggle_messages"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
@@ -176,114 +176,114 @@
         </service>
 
         <provider
-            android:name="dev.dworks.apps.moexplorer.provider.RecentsProvider"
+            android:name="dev.amoeba.moexplorer.provider.RecentsProvider"
             android:authorities="${applicationId}.recents"
             android:exported="true"
             android:grantUriPermissions="true"
             android:permission="android.permission.MANAGE_DOCUMENTS">
             <intent-filter>
-                <action android:name="dev.dworks.apps.anexplorer.action.DOCUMENTS_PROVIDER" />
+                <action android:name="dev.amoeba.moexplorer.action.DOCUMENTS_PROVIDER" />
             </intent-filter>
         </provider>
         <provider
-            android:name="dev.dworks.apps.moexplorer.provider.ExternalStorageProvider"
+            android:name="dev.amoeba.moexplorer.provider.ExternalStorageProvider"
             android:authorities="${applicationId}.externalstorage.documents"
             android:exported="true"
             android:grantUriPermissions="true"
             android:permission="android.permission.MANAGE_DOCUMENTS">
             <intent-filter>
-                <action android:name="dev.dworks.apps.anexplorer.action.DOCUMENTS_PROVIDER" />
+                <action android:name="dev.amoeba.moexplorer.action.DOCUMENTS_PROVIDER" />
             </intent-filter>
         </provider>
         <provider
-            android:name="dev.dworks.apps.moexplorer.provider.MediaDocumentsProvider"
+            android:name="dev.amoeba.moexplorer.provider.MediaDocumentsProvider"
             android:authorities="${applicationId}.media.documents"
             android:exported="true"
             android:grantUriPermissions="true"
             android:permission="android.permission.MANAGE_DOCUMENTS">
             <intent-filter>
-                <action android:name="dev.dworks.apps.anexplorer.action.DOCUMENTS_PROVIDER" />
+                <action android:name="dev.amoeba.moexplorer.action.DOCUMENTS_PROVIDER" />
             </intent-filter>
         </provider>
         <provider
-            android:name="dev.dworks.apps.moexplorer.provider.NonMediaDocumentsProvider"
+            android:name="dev.amoeba.moexplorer.provider.NonMediaDocumentsProvider"
             android:authorities="${applicationId}.nonmedia.documents"
             android:exported="true"
             android:grantUriPermissions="true"
             android:permission="android.permission.MANAGE_DOCUMENTS">
             <intent-filter>
-                <action android:name="dev.dworks.apps.anexplorer.action.DOCUMENTS_PROVIDER" />
+                <action android:name="dev.amoeba.moexplorer.action.DOCUMENTS_PROVIDER" />
             </intent-filter>
         </provider>
         <provider
-            android:name="dev.dworks.apps.moexplorer.provider.AppsProvider"
+            android:name="dev.amoeba.moexplorer.provider.AppsProvider"
             android:authorities="${applicationId}.apps.documents"
             android:exported="true"
             android:grantUriPermissions="true"
             android:permission="android.permission.MANAGE_DOCUMENTS">
             <intent-filter>
-                <action android:name="dev.dworks.apps.anexplorer.action.DOCUMENTS_PROVIDER" />
+                <action android:name="dev.amoeba.moexplorer.action.DOCUMENTS_PROVIDER" />
             </intent-filter>
         </provider>
         <provider
-            android:name="dev.dworks.apps.moexplorer.provider.RootedStorageProvider"
+            android:name="dev.amoeba.moexplorer.provider.RootedStorageProvider"
             android:authorities="${applicationId}.rootedstorage.documents"
             android:exported="true"
             android:grantUriPermissions="true"
             android:permission="android.permission.MANAGE_DOCUMENTS">
             <intent-filter>
-                <action android:name="dev.dworks.apps.anexplorer.action.DOCUMENTS_PROVIDER" />
+                <action android:name="dev.amoeba.moexplorer.action.DOCUMENTS_PROVIDER" />
             </intent-filter>
         </provider>
 
         <provider
-            android:name="dev.dworks.apps.moexplorer.provider.HeatMapProvider"
+            android:name="dev.amoeba.moexplorer.provider.HeatMapProvider"
             android:authorities="${applicationId}.heatmap.documents"
             android:exported="false"
             android:enabled="false"
             android:grantUriPermissions="true"
             android:permission="android.permission.MANAGE_DOCUMENTS">
             <intent-filter>
-                <action android:name="dev.dworks.apps.anexplorer.action.DOCUMENTS_PROVIDER" />
+                <action android:name="dev.amoeba.moexplorer.action.DOCUMENTS_PROVIDER" />
             </intent-filter>
         </provider>
         <provider
-            android:name="dev.dworks.apps.moexplorer.provider.DownloadStorageProvider"
+            android:name="dev.amoeba.moexplorer.provider.DownloadStorageProvider"
             android:authorities="${applicationId}.downloads.documents"
             android:exported="false"
             android:enabled="false"
             android:grantUriPermissions="true"
             android:permission="android.permission.MANAGE_DOCUMENTS">
             <intent-filter>
-                <action android:name="dev.dworks.apps.anexplorer.action.DOCUMENTS_PROVIDER" />
+                <action android:name="dev.amoeba.moexplorer.action.DOCUMENTS_PROVIDER" />
             </intent-filter>
         </provider>
 
         <provider
-            android:name="dev.dworks.apps.moexplorer.provider.ExplorerProvider"
+            android:name="dev.amoeba.moexplorer.provider.ExplorerProvider"
             android:authorities="${applicationId}.explorer"
             android:enabled="true"
             android:exported="false" />
 
         <provider
-            android:name="dev.dworks.apps.moexplorer.provider.UsbStorageProvider"
+            android:name="dev.amoeba.moexplorer.provider.UsbStorageProvider"
             android:authorities="${applicationId}.usbstorage.documents"
             android:exported="true"
             android:grantUriPermissions="true"
             android:permission="android.permission.MANAGE_DOCUMENTS" >
             <intent-filter>
-                <action android:name="dev.dworks.apps.anexplorer.action.DOCUMENTS_PROVIDER" />
+                <action android:name="dev.amoeba.moexplorer.action.DOCUMENTS_PROVIDER" />
             </intent-filter>
         </provider>
 
         <provider
-            android:name="dev.dworks.apps.moexplorer.provider.NetworkStorageProvider"
+            android:name="dev.amoeba.moexplorer.provider.NetworkStorageProvider"
             android:authorities="${applicationId}.networkstorage.documents"
             android:exported="true"
             android:grantUriPermissions="true"
             android:permission="android.permission.MANAGE_DOCUMENTS" >
             <intent-filter>
-                <action android:name="dev.dworks.apps.anexplorer.action.DOCUMENTS_PROVIDER" />
+                <action android:name="dev.amoeba.moexplorer.action.DOCUMENTS_PROVIDER" />
             </intent-filter>
         </provider>
 

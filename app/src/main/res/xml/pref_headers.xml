@@ -2,16 +2,16 @@
 <preference-headers xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <header
-        android:fragment="dev.dworks.apps.moexplorer.setting.GeneralPreferenceFragment"
+        android:fragment="dev.amoeba.moexplorer.setting.GeneralPreferenceFragment"
         android:title="@string/pref_header_general" />
     <header
-        android:fragment="dev.dworks.apps.moexplorer.setting.ThemePreferenceFragment"
+        android:fragment="dev.amoeba.moexplorer.setting.ThemePreferenceFragment"
         android:title="@string/pref_header_theme" />
     <header
-        android:fragment="dev.dworks.apps.moexplorer.setting.SecurityPreferenceFragment"
+        android:fragment="dev.amoeba.moexplorer.setting.SecurityPreferenceFragment"
         android:title="@string/pref_header_security" />
     <header
-        android:fragment="dev.dworks.apps.moexplorer.setting.AdvancedPreferenceFragment"
+        android:fragment="dev.amoeba.moexplorer.setting.AdvancedPreferenceFragment"
         android:title="@string/pref_header_advanced" />
 
 </preference-headers>

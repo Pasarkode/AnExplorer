@@ -83,7 +83,7 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 app:srcCompat="@drawable/ic_action_done" />
 
-            <dev.dworks.apps.moexplorer.ui.MaterialProgressBar
+            <dev.amoeba.moexplorer.ui.MaterialProgressBar
                 android:id="@android:id/progress"
                 style="@style/ListProgress"
                 android:layout_width="@dimen/progress_bar_small_size"
